@@ -8,15 +8,15 @@
 ![功能截图](http://t.cn/Rcgv0Kw)
 
 ## 使用方法
-### 引入CSS，jQuery和MonthSelecter.js
-	<script src="~/Content/Javascript/jquery-1.10.2.min.js"></script>
-	<link href="~/Content/CSS/MonthSelecrer.css" rel="stylesheet"/>
-	<script src="~/Content/Javascript/MonthSelecter.js"></script>
+### 引入MonthSelecrer.css，jQuery和MonthSelecter.js
+	<link href="~/CSS/MonthSelecrer.css" rel="stylesheet"/>
+	<script src="~/Javascript/jquery-1.10.2.min.js"></script>	
+	<script src="~/Javascript/MonthSelecter.js"></script>
 	
 ### DOM结构
 	<input type="text" name="month" class="ms" id="month1"/><br/>
-    <input type="text" name="month" class="ms" id="month2"/><br/>
-    <input type="text" name="month" class="ms" id="month3"/>
+	<input type="text" name="month" class="ms" id="month2"/><br/>
+	<input type="text" name="month" class="ms" id="month3"/>
 	
 ### JS使用
 	<script>
