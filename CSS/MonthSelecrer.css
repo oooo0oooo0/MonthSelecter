@@ -1,0 +1,33 @@
+﻿
+.month {
+    display: inline-block;
+    position: absolute;
+}
+
+table {
+    border-collapse: collapse;
+    border: none;
+}
+
+td, .input_num {
+    /*display: block;*/
+    width: 30px;
+    border: 1px solid #000;
+    text-align: center;
+    /*float: left;*/
+    margin: 0;
+    padding: 0;
+}
+
+.input_num {
+    text-align: center;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+/*.input_num:hover{
+                background-color: red;
+            }*/
+.active {
+    background-color: blue;
+}
