@@ -1,12 +1,33 @@
 ﻿$.fn.monthSelecter = function () {
-    var monthDiv = '<div class="month">' +
-                   '<table>' +
-                   '<tr><td><input class="input_num" type="text" value="1" readonly /></td><td><input class="input_num" type="text" value="2" readonly /></td><td><input class="input_num" type="text" value="3" readonly /></td><td><input class="input_num" type="text" value="4" readonly /></td></tr>' +
-                   '<tr><td><input class="input_num" type="text" value="5" readonly /></td><td><input class="input_num" type="text" value="6" readonly /></td><td><input class="input_num" type="text" value="7" readonly /></td><td><input class="input_num" type="text" value="8" readonly /></td></tr>' +
-                   '<tr><td><input class="input_num" type="text" value="9" readonly /></td><td><input class="input_num" type="text" value="10" readonly /></td><td><input class="input_num" type="text" value="11" readonly /></td><td><input class="input_num" type="text" value="12" readonly /></td></tr>' +
-                   '</table>' +
-                   '<input type="button" name="" id="sure" value="确认" /><input type="button" name="" id="cancle" value="清空" />' +
-                   '</div>';
+//  var monthDiv = '<div class="month">' +
+//                 '<table>' +
+//                 '<tr><td><input class="input_num" type="text" value="1" readonly /></td><td><input class="input_num" type="text" value="2" readonly /></td><td><input class="input_num" type="text" value="3" readonly /></td><td><input class="input_num" type="text" value="4" readonly /></td></tr>' +
+//                 '<tr><td><input class="input_num" type="text" value="5" readonly /></td><td><input class="input_num" type="text" value="6" readonly /></td><td><input class="input_num" type="text" value="7" readonly /></td><td><input class="input_num" type="text" value="8" readonly /></td></tr>' +
+//                 '<tr><td><input class="input_num" type="text" value="9" readonly /></td><td><input class="input_num" type="text" value="10" readonly /></td><td><input class="input_num" type="text" value="11" readonly /></td><td><input class="input_num" type="text" value="12" readonly /></td></tr>' +
+//                 '</table>' +
+//                 '<input type="button" name="" id="sure" value="确认" /><input type="button" name="" id="cancle" value="清空" />' +
+//                 '</div>';
+                   
+    var monthDiv =  '<div class="month">'+
+    				'<ul class="input_list">'+
+    				'<li><input class="input_num" type="text" value="1" readonly/></li>'+
+    				'<li><input class="input_num" type="text" value="2" readonly /></li>'+
+    				'<li><input class="input_num" type="text" value="3" readonly /></li>'+
+    				'<li><input class="input_num" type="text" value="4" readonly /></li>'+
+    				'<li><input class="input_num" type="text" value="5" readonly /></li>'+
+    				'<li><input class="input_num" type="text" value="6" readonly /></li>'+
+    				'<li><input class="input_num" type="text" value="7" readonly /></li>'+
+    				'<li><input class="input_num" type="text" value="8" readonly /></li>'+
+    				'<li><input class="input_num" type="text" value="9" readonly /></li>'+
+    				'<li><input class="input_num" type="text" value="10" readonly /></li>'+
+    				'<li><input class="input_num" type="text" value="11" readonly /></li>'+
+    				'<li><input class="input_num" type="text" value="12" readonly /></li>'+
+    				'</ul>'+
+    				'<div class="btn_box">'+
+    				'<input type="button" name="" id="sure" value="确认" />'+
+    				'<input type="button" name="" id="cancle" value="清空" />'+
+    				'</div>'+
+    				'</div>';
 
     this.on("focus", function () {
         //先把之前显示的清除掉
